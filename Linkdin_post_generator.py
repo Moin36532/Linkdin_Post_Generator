@@ -3,11 +3,9 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 from langchain_core.prompts import PromptTemplate
-load_dotenv()
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
-import streamlit as st
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 # hf_token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
-
+load_dotenv()
 st.markdown(
     """
     <h1 style='display: flex; align-items: center;'>
@@ -18,7 +16,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 llm = HuggingFaceEndpoint(
     repo_id="deepseek-ai/DeepSeek-V3.1",
 )
@@ -93,6 +90,7 @@ if st.button("Generate Post"):
     st.write("### Generated Linkdin Post:")
 
     st.write(result.content)
+
 
 
 
