@@ -31,6 +31,7 @@ Built with **LangChain, HuggingFace, and Streamlit**.
    ```bash
    git clone https://github.com/Moin36532/Linkdin_Post_Generator.git
    cd Linkdin_Post_Generator
+   pip install -r requirements.txt
+   streamlit run Linkdin_post_generator.py
 
-pip install -r requirements.txt
-streamlit run Linkdin_post_generator.py
+
