@@ -1,4 +1,4 @@
-from langchain-huggingface import ChatHuggingFace,HuggingFaceEndpoint
+from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
 from dotenv import load_dotenv
 import streamlit as st
 import os
@@ -92,4 +92,5 @@ if st.button("Generate Post"):
     st.write("### Generated Linkdin Post:")
 
     st.write(result.content)
+
 
