@@ -5,7 +5,7 @@ import os
 from langchain_core.prompts import PromptTemplate
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 # hf_token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
-load_dotenv()
+
 st.markdown(
     """
     <h1 style='display: flex; align-items: center;'>
@@ -90,6 +90,7 @@ if st.button("Generate Post"):
     st.write("### Generated Linkdin Post:")
 
     st.write(result.content)
+
 
 
 
