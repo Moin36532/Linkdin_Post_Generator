@@ -4,9 +4,9 @@ import streamlit as st
 import os
 from langchain_core.prompts import PromptTemplate
 load_dotenv()
-# os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 import streamlit as st
-hf_token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
+# hf_token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = hf_token
 
 st.markdown(
@@ -94,6 +94,7 @@ if st.button("Generate Post"):
     st.write("### Generated Linkdin Post:")
 
     st.write(result.content)
+
 
 
 
