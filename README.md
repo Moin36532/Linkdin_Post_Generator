@@ -23,7 +23,8 @@ Built with **LangChain, HuggingFace, and Streamlit**.
 
 - ⚡ **Fast & Easy**  
   - Generate posts instantly with just one input  
-
+Check it live here:
+  https://linkdin-postgenerator.streamlit.app/
 ---
 
 ## 🚀 Installation
